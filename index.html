@@ -1,128 +1,176 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HUNANIMA - Machines Agricoles Simples</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #fefefe;
-      color: #333;
-    }
-    header {
-      background-color: #2e7d32; /* Vert foncé */
-      color: #fdd835; /* Jaune vif */
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-    header p {
-      margin: 5px 0 0;
-      font-size: 1.2em;
-    }
-    nav {
-      background-color: #fdd835;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-      color: #2e7d32;
-    }
-    .hero {
-      background: url('https://i.pinimg.com/550x/a9/df/51/a9df5172829f8c05f5b92f97553d41ae.jpg') no-repeat center center/cover;
-      height: 350px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-shadow: 2px 2px 4px #000;
-      font-size: 2em;
-    }
-    section {
-      padding: 50px 20px;
-      text-align: center;
-    }
-    section h2 {
-      color: #2e7d32;
-      margin-bottom: 20px;
-    }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-    .gallery img {
-      width: 280px;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-    footer {
-      background-color: #2e7d32;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-    }
-    footer p {
-      margin: 5px 0;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Its Better Outside LLC | Luxury Landscape Architecture & Outdoor Infrastructure</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #0c0e0b; color: #f4f6f0; font-family: 'Plus Jakarta Sans', sans-serif; overflow-x: hidden; }
+        .font-serif-lux { font-family: 'Playfair Display', serif; }
+        .glass-nav { background: rgba(12, 14, 11, 0.8); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+        .parallax { background-attachment: fixed; background-position: center; background-size: cover; }
+        .reveal { transition: all 1.4s cubic-bezier(0.16, 1, 0.3, 1); opacity: 0; transform: translateY(60px); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #0c0e0b; }
+        ::-webkit-scrollbar-thumb { background: #2d3629; border-radius: 10px; }
+    </style>
 </head>
-<body>
+<body class="antialiased">
 
-  <header>
-    <h1>HUNANIMA</h1>
-    <p>Machines Agricoles Simples et Fiables</p>
-  </header>
+    <nav class="fixed w-full z-50 glass-nav py-6 px-12 flex justify-between items-center">
+        <div class="font-serif-lux text-xl font-bold tracking-widest">ITS BETTER <span class="text-stone-500 font-light italic">OUTSIDE.</span></div>
+        <div class="hidden lg:flex space-x-12 text-[10px] font-black uppercase tracking-[0.4em] text-stone-300">
+            <a href="#philosophy" class="hover:text-stone-400 transition">Philosophy</a>
+            <a href="#infrastructure" class="hover:text-stone-400 transition">Infrastructure</a>
+            <a href="#governance" class="hover:text-stone-400 transition">Governance</a>
+            <a href="#contact" class="border border-white/20 px-6 py-2 rounded-full hover:bg-white hover:text-black transition">Inquire</a>
+        </div>
+    </nav>
 
-  <nav>
-    <a href="#about">À propos</a>
-    <a href="#gallery">Galerie</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <section class="relative h-screen flex items-center justify-center overflow-hidden px-6">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.pexels.com/photos/2835562/pexels-photo-2835562.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=2" class="w-full h-full object-cover opacity-25 grayscale" alt="Luxury Architectural Landscape">
+        </div>
+        <div class="relative z-10 text-center max-w-4xl">
+            <span class="text-stone-400 uppercase tracking-[0.6em] text-[10px] font-bold mb-6 block">Outdoor Infrastructure & Architecture</span>
+            <h1 class="font-serif-lux text-6xl md:text-9xl font-bold leading-none mb-8 tracking-tight">
+                Architecting <br><span class="italic font-light text-stone-400">The Horizon.</span>
+            </h1>
+            <p class="text-stone-500 uppercase tracking-[0.3em] text-xs max-w-lg mx-auto leading-relaxed">
+                Its Better Outside LLC | Portland, Oregon
+            </p>
+        </div>
+        <div class="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
+            <span class="text-[9px] uppercase tracking-[0.4em] text-stone-600">Scroll Down</span>
+            <div class="w-[1px] h-12 bg-gradient-to-b from-stone-500 to-transparent"></div>
+        </div>
+    </section>
 
-  <div class="hero">
-    <p>Votre partenaire pour des machines agricoles durables</p>
-  </div>
+    <section id="philosophy" class="py-44 px-12 bg-[#111410]">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-24 items-center">
+            <div class="reveal">
+                <span class="text-stone-500 font-bold uppercase tracking-[0.4em] text-[10px] block mb-4">// THE FOUNDATION</span>
+                <h2 class="font-serif-lux text-5xl font-medium text-stone-100 leading-tight mb-8">Elegance belongs in the open air.</h2>
+                <p class="text-stone-400 leading-loose text-base font-light mb-8">
+                    Based in Portland, Oregon, Its Better Outside LLC masterminds luxury structural environments and upscale exterior spaces. We transform raw, premium land into high-end architectural infrastructure that perfectly merges contemporary design with environmental consciousness.
+                </p>
+                <div class="w-16 h-[1px] bg-stone-500"></div>
+            </div>
+            <div class="relative reveal">
+                <img src="https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="rounded-2xl shadow-2xl grayscale contrast-125 brightness-75 w-full h-[500px] object-cover" alt="Modern Architecture Outside">
+            </div>
+        </div>
+    </section>
 
-  <section id="about">
-    <h2>À propos de nous</h2>
-    <p>
-      Chez <strong>HUNANIMA</strong>, nous nous spécialisons dans la fabrication et la distribution de 
-      <strong>machines agricoles simples</strong> pour faciliter le travail des agriculteurs. 
-      Nos solutions combinent <em>durabilité, efficacité et innovation</em> afin de répondre aux besoins de toutes les exploitations.
-    </p>
-  </section>
+    <section id="infrastructure" class="py-44 px-12 bg-[#0c0e0b]">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-32 max-w-2xl">
+                <span class="text-stone-500 font-bold uppercase tracking-[0.4em] text-[10px] block mb-4">// SERVICES MATRIX</span>
+                <h2 class="font-serif-lux text-6xl font-bold tracking-tight text-white">CORE CAPABILITIES</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="group cursor-pointer reveal">
+                    <div class="overflow-hidden rounded-xl mb-6 h-72">
+                        <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="w-full h-full object-cover group-hover:scale-110 transition duration-700 brightness-50 group-hover:brightness-90" alt="Landscape Construction">
+                    </div>
+                    <h3 class="font-serif-lux text-2xl font-bold mb-3 group-hover:text-stone-400 transition">Landscape Master-Planning</h3>
+                    <p class="text-stone-500 text-sm leading-relaxed">Comprehensive development blueprints for expansive residential and corporate outer boundaries.</p>
+                </div>
 
-  <section id="gallery">
-    <h2>Nos Machines</h2>
-    <div class="gallery">
-      <img src="http://ogden_images.s3.amazonaws.com/www.motherearthnews.com/images/2014/11/22234423/Boaz-Mini-Combine-jpg.jpg" alt="Mini moissonneuse">
-      <img src="https://krs-agro.ru/products/zagotovka_kormov/elho/19/7.jpg" alt="Machine agricole">
-      <img src="https://img.mod-network.net/files/images/6218ac69d37fb/SimpleFarmSilov1000_6222.jpg" alt="Équipement agricole simple">
-    </div>
-  </section>
+                <div class="group cursor-pointer reveal">
+                    <div class="overflow-hidden rounded-xl mb-6 h-72">
+                        <img src="https://images.pexels.com/photos/259580/pexels-photo-259580.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="w-full h-full object-cover group-hover:scale-110 transition duration-700 brightness-50 group-hover:brightness-90" alt="High-End Pavilions">
+                    </div>
+                    <h3 class="font-serif-lux text-2xl font-bold mb-3 group-hover:text-stone-400 transition">Structural Development</h3>
+                    <p class="text-stone-500 text-sm leading-relaxed">Crafting high-end luxury pavilions, structural frameworks, and integrated exterior structures.</p>
+                </div>
 
-  <section id="contact">
-    <h2>Contactez-nous</h2>
-    <p><strong>Email :</strong> admin@tyusex.shop</p>
-    <p><strong>Téléphone :</strong> +33 7 38 50 26 36</p>
-    <p><strong>Adresse :</strong> Avenue Baratier, Montmorency, 95160, France</p>
-  </section>
+                <div class="group cursor-pointer reveal">
+                    <div class="overflow-hidden rounded-xl mb-6 h-72">
+                        <img src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="w-full h-full object-cover group-hover:scale-110 transition duration-700 brightness-50 group-hover:brightness-90" alt="Environmental Architecture">
+                    </div>
+                    <h3 class="font-serif-lux text-2xl font-bold mb-3 group-hover:text-stone-400 transition">Eco Infrastructure</h3>
+                    <p class="text-stone-500 text-sm leading-relaxed">Sustainable, high-performance integration techniques for resource-efficient land use.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 HUNANIMA - Tous droits réservés.</p>
-  </footer>
+    <section class="h-[75vh] parallax relative" style="background-image: url('https://images.pexels.com/photos/1438832/pexels-photo-1438832.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=2');">
+        <div class="absolute inset-0 bg-gradient-to-t from-[#0c0e0b] via-black/40 to-[#0c0e0b] flex items-center justify-center px-6">
+            <div class="text-center reveal">
+                <h3 class="font-serif-lux text-4xl md:text-6xl tracking-tight max-w-3xl mx-auto italic font-light leading-tight">
+                    "Transforming open spaces into monumental architectural statements."
+                </h3>
+            </div>
+        </div>
+    </section>
 
+    <section id="governance" class="py-44 px-12 bg-stone-950">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-serif-lux text-4xl font-bold">CORPORATE PRIVACY REGIME</h2>
+                <p class="text-stone-600 text-[10px] tracking-widest uppercase mt-2">Data Protection Standard Compliance</p>
+            </div>
+            <div class="border border-white/5 bg-black p-12 rounded-2xl h-80 overflow-y-scroll text-[11px] uppercase tracking-[0.2em] leading-loose text-stone-500">
+                <p class="text-stone-200 mb-6 font-bold">REVISED DOCUMENTATION: MAY 16, 2026</p>
+                <p class="mb-4">Its Better Outside LLC ("The Corporate Entity") dictates this privacy scheme to specify data management structures within our Oregon operational jurisdiction. We preserve total transparency.</p>
+                
+                <h4 class="text-white font-bold mt-8 mb-4">1. Data Minimization</h4>
+                <p class="mb-4">We maintain records consisting solely of client professional communication endpoints (contact@allthingsbetter.org) and phone signals (+1 943-286-3500) exclusively for contractual development.</p>
+                
+                <h4 class="text-white font-bold mt-8 mb-4">2. Architectural Confidentiality</h4>
+                <p class="mb-4">Structural schematics and land assessment metrics are locked behind multi-node encryption models. We completely decline external data distribution models or affiliate marketing sharing.</p>
+                
+                <h4 class="text-white font-bold mt-8 mb-4">3. Legal Competence</h4>
+                <p>All framework rules and disputes align under the exclusive jurisdiction of the state of Oregon, United States of America.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="py-32 px-12 bg-[#0c0e0b] border-t border-white/5 text-white">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-24">
+            <div>
+                <h2 class="font-serif-lux text-5xl mb-12 font-bold tracking-tight">COMMENCE LIAISON.</h2>
+                <div class="space-y-8">
+                    <div>
+                        <span class="text-stone-600 text-[9px] font-black tracking-[0.5em] block mb-2 uppercase">Official Inbox</span>
+                        <a href="mailto:contact@allthingsbetter.org" class="text-2xl font-light hover:text-stone-400 transition tracking-tighter">contact@allthingsbetter.org</a>
+                    </div>
+                    <div>
+                        <span class="text-stone-600 text-[9px] font-black tracking-[0.5em] block mb-2 uppercase">Telephony</span>
+                        <a href="tel:19432863500" class="text-2xl font-light hover:text-stone-400 transition tracking-tighter">+1 943-286-3500</a>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:text-right flex flex-col justify-end">
+                <span class="text-stone-600 text-[9px] font-black tracking-[0.4em] block mb-3 uppercase">Registered Station</span>
+                <p class="font-serif-lux text-2xl font-light leading-relaxed italic text-stone-300">
+                    2014 NW Glisan St APT 303<br>
+                    Portland, OR, 97209-1144<br>
+                    United States
+                </p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-32 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between text-[9px] font-bold tracking-[0.5em] text-stone-700 uppercase">
+            <p>&copy; 2026 ITS BETTER OUTSIDE LLC. ARCHITECTURE MATRIX RESERVED.</p>
+            <p>REGISTRATION VENUE: OREGON, USA</p>
+        </div>
+    </footer>
+
+    <script>
+        // Elite Intersection Observer for Scrolling Effects
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
 </body>
 </html>
